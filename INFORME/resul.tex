@@ -1,5 +1,130 @@
 \section{Desarrollo}
 
+\subsection{Parte 1: Madurez}
+
+En primer lugar se determina la madurez del hormigón según el método de Plowman, para luego determinar el tiempo necesario para alcanzar la resistencia requerida con los metodos de Nurse-Saul como la de Freieslaben, Hansen y Pedersen.
+
+\subsubsection*{Plowman}
+
+Considerando una temperatura de terreno de 23 °C ($T_r$), asi como $T_D$ tiene un valor de 0 °C, se calcula la madurez como:
+
+\begin{equation}
+    M = t_{eq} (T_r - T_D) \quad \text{donde} \quad t_{eq} = 13.27
+\end{equation}
+
+A partir de los datos entregados, se obtiene la siguiente tabla:
+
+\begin{table}[htbp]
+\centering
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{r r r r r r r r}
+\hline
+\multicolumn{1}{c}{Edad} & \multicolumn{1}{c}{Temperatura} & \multicolumn{1}{c}{Resistencia} & \multicolumn{1}{c}{dt} & \multicolumn{1}{c}{T prom} & \multicolumn{1}{c}{Madurez} & \multicolumn{1}{c}{Madurez} & \multicolumn{1}{c}{Plowman} \\
+\multicolumn{1}{c}{[días]} & \multicolumn{1}{c}{[°C]} & \multicolumn{1}{c}{MPa} & \multicolumn{1}{c}{días} & \multicolumn{1}{c}{C} & \multicolumn{1}{c}{C*h} & \multicolumn{1}{c}{C*dia} & \multicolumn{1}{c}{C*hr} \\
+\hline
+0 & 29 & 0 & 0 & -- & 0 & 0 & 0 \\
+0.25 & 39 & 0.39 & 0.25 & 34 & 8.5 & 7 & 168 \\
+0.5 & 49 & 0.88 & 0.25 & 44 & 19.5 & 14 & 336 \\
+0.75 & 54 & 1.42 & 0.25 & 51.5 & 32.375 & 21 & 504 \\
+1 & 59 & 2.01 & 0.25 & 56.5 & 46.5 & 28 & 672 \\
+1.5 & 64 & 3.29 & 0.5 & 61.5 & 77.25 & 42 & 1008 \\
+2 & 59 & 4.47 & 0.5 & 61.5 & 108 & 56 & 1344 \\
+2.5 & 48 & 5.43 & 0.5 & 53.5 & 134.75 & 70 & 1680 \\
+3 & 44 & 6.31 & 0.5 & 46 & 157.75 & 84 & 2016 \\
+3.5 & 39 & 7.09 & 0.5 & 41.5 & 178.5 & 98 & 2352 \\
+4 & 34 & 7.77 & 0.5 & 36.5 & 196.75 & 112 & 2688 \\
+4.5 & 29 & 8.35 & 0.5 & 31.5 & 212.5 & 126 & 3024 \\
+5 & 26 & 8.87 & 0.5 & 27.5 & 226.25 & 140 & 3360 \\
+5.5 & 26 & 9.39 & 0.5 & 26 & 239.25 & 154 & 3696 \\
+6 & 23 & 9.85 & 0.5 & 24.5 & 251.5 & 168 & 4032 \\
+7 & 23 & 10.77 & 1 & 23 & 274.5 & 196 & 4704 \\
+8 & 23 & 11.69 & 1 & 23 & 297.5 & 224 & 5376 \\
+9 & 23 & 12.61 & 1 & 23 & 320.5 & 252 & 6048 \\
+10 & 23 & 13.53 & 1 & 23 & 343.5 & 280 & 6720 \\
+11 & 23 & 14.45 & 1 & 23 & 366.5 & 308 & 7392 \\
+14 & 23 & 17.21 & 3 & 23 & 435.5 & 392 & 9408 \\
+21 & 23 & 23.65 & 7 & 23 & 596.5 & 588 & 14112 \\
+28 & 23 & 30.09 & 7 & 23 & 757.5 & 784 & 18816 \\
+\hline
+\end{tabular}
+\end{table}
+
+De esta manera, interpolando la madurez obtenida, se obtiene un tiempo de 8.33 dias, es decir, ese es el tiempo nesesario para el hormigon en obra tenga una resitencia similar a la resitencia alcanzada a los 13.27 dias en laboratorio.
+
+Ahora, es nesesario determinar a madurez del hormigon al $85\%$ de $f_{cm}$, donde considerando un hormigon G20 con 4MPa de desviacion estandar, se obtiene:
+
+\begin{equation}
+    0.85 \cdot f_{cm} = f'_c + t \cdot s = (20 + 1.282 \cdot 4)\cdot 0.85 = 21.35 MPa
+\end{equation}
+
+Luego se obtienen los factores K1 y K2 a partir de los valores de 3 y 28 dias:
+
+\begin{equation}
+    6.31 = K_1 + K_2 log(2016)
+\end{equation}
+
+\begin{equation}
+    30.09 = K_1 + K_2 log(18816)
+\end{equation}
+
+De esta forma, $K_1 = -74.698$ y $K_2 = 24.514$. Luego, la madurez para la resitencia requerida es:
+
+\begin{equation}
+    R(M) = K_1 + K_2 log(M)
+\end{equation}
+
+\begin{equation}
+    21.35 = -74.698 + 24.514 log(M)
+\end{equation}
+
+De esta forma, la madurez requerida es de $M = 345.264$ C dia.
+
+\subsubsection*{Nurse-Saul}
+
+El metodo establece que el tiempo equivalente se puede calcular como:
+
+\begin{equation}
+    \Delta t_{eq} = \frac{T_i - T_d}{T_r - T_d} \Delta t_i
+\end{equation}
+
+De esta forma, se obtiene la siguiente tabla:
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{r r r r r}
+\hline
+\multicolumn{1}{c}{Edad [días]} & \multicolumn{1}{c}{Temperatura [°C]} & \multicolumn{1}{c}{t eqi obra [días]} & \multicolumn{1}{c}{t equi lab [días]} & \multicolumn{1}{c}{Madurez c dia} \\
+\hline
+0 & 29 & 0 & 0 & 0 \\
+0.25 & 39 & 0.423913043 & 0.39 & 7 \\
+0.5 & 49 & 0.956521739 & 0.88 & 14 \\
+0.75 & 54 & 1.543478261 & 1.42 & 21 \\
+1 & 59 & 2.184782609 & 2.01 & 28 \\
+1.5 & 64 & 3.576086957 & 3.29 & 42 \\
+2 & 59 & 4.858695652 & 4.47 & 56 \\
+2.5 & 48 & 5.902173913 & 5.43 & 70 \\
+3 & 44 & 6.858695652 & 6.31 & 84 \\
+3.5 & 39 & 7.706521739 & 7.09 & 98 \\
+4 & 34 & 8.445652174 & 7.77 & 112 \\
+4.5 & 29 & 9.076086957 & 8.35 & 126 \\
+5 & 26 & 9.641304348 & 8.87 & 140 \\
+5.5 & 26 & 10.20652174 & 9.39 & 154 \\
+6 & 23 & 10.70652174 & 9.85 & 168 \\
+7 & 23 & 11.70652174 & 10.77 & 196 \\
+8 & 23 & 12.70652174 & 11.69 & 224 \\
+9 & 23 & 13.70652174 & 12.61 & 252 \\
+10 & 23 & 14.70652174 & 13.53 & 280 \\
+11 & 23 & 15.70652174 & 14.45 & 308 \\
+14 & 23 & 18.70652174 & 17.21 & 392 \\
+21 & 23 & 25.70652174 & 23.65 & 588 \\
+28 & 23 & 32.70652174 & 30.09 & 784 \\
+\hline
+\end{tabular}
+\end{table}
+
+Luego, interpolando la madurez obtenida, se obtiene un tiempo de 17.037 dias en obra y 15.674 dias en laboratorio para alcanzar la resitencia requerida de 21.35 MPa.
+
 \subsection{Parte 3: Bolomey y Venuat}
 
 En esta parte se requirió determinar el tiempo mínimo de desmolde de una columna para optimizar el presupuesto de la obra. Se compararon los tiempos de desmimbre utilizando un hormigón tradicional con uno de alta resistencia. 
