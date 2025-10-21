@@ -1,0 +1,100 @@
+\section{Desarrollo}
+
+\subsection{Parte 3: Bolomey y Venuat}
+
+En esta parte se requirió determinar el tiempo mínimo de desmolde de una columna para optimizar el presupuesto de la obra. Se compararon los tiempos de desmimbre utilizando un hormigón tradicional con uno de alta resistencia. 
+Para el desarrollo de esta sección, se utilizaron los métodos de Bolomey y Venuat, los cuales permiten estimar la resistencia del hormigón en función de su dosificación y del tiempo de curado.
+
+A continuación, se presentan los datos utilizados, los cálculos realizados para ambos tipos de hormigón y los resultados obtenidos.
+
+\begin{table}[H]
+\centering
+\caption{Datos experimentales – Grupo 5}
+\renewcommand{\arraystretch}{1.15}
+\small
+\begin{tabular}{lccc}
+\hline
+%\rowcolor[HTML]{EFEFEF}
+\textbf{Parámetro} & \textbf{Unidad} & \textbf{Cem. corriente} & \textbf{Cem. alta resistencia} \\ \hline
+Agua utilizada & kg/m$^3$ & 166.32 & 153.68 \\
+Cemento mezcla 1 (Z1 / V1) & kg/m$^3$ & 432.23 & 324.68 \\
+Cemento mezcla 2 (Z2 / V2) & kg/m$^3$ & 312.42 & 381.65 \\
+Resistencia 14 días mezcla 1 & MPa & 20.45 & 24.24 \\
+Resistencia 14 días mezcla 2 & MPa & 15.47 & 33.20 \\
+Resistencia 28 días mezcla 1 & MPa & 27.27 & 29.55 \\
+Resistencia 28 días mezcla 2 & MPa & 22.42 & 43.11 \\
+Agua para columnas & kg/m$^3$ & 141 & 141\\ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Resistencia a la compresión}
+
+En primer lugar, se determinó la resistencia requerida a partir de la especificada utilizando la siguiente fórmula: $f_{cm} = f_c + t \cdot s$, donde $f_c$ es la resistencia especificada, $t$ es un factor de seguridad y $s$ es la desviación estándar del hormigón.
+
+\begin{table}[H]
+\centering
+\caption{Resistencia requerida para el desmolde}
+\begin{tabular}{lcc}
+\hline
+Parámetro & Símbolo & Valor [MPa] \\ \hline
+Desviación estándar & $s$ & 3.42 \\
+Factor de seguridad & $t$ & 2.113 \\
+Resistencia especificada & $f'_c$ & 28.86 \\
+Resistencia requerida & $f_{cm}$ & 36.08 \\
+Porcentaje requerido & \% & 90 \\
+Resistencia mínima para desmolde & $f_{req}$ & 32.47 \\ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection{Dosis mínima de cemento}
+
+En segundo lugar, se utilizó el método de Bolomey para determinar la dosis de cemento a utilizar para alcanzar la resistencia requerida. Se utilizó esta fórmula $R = a(\frac{c}{w} - b)$ para determinar los parámetros $a$, $b$, con los cuales se obtuvo la relación $c/w$ y finalmente de la dosis de cemento. Los sistemas de ecuaciones resueltos son los siguientes:
+
+Para el cemento corriente:
+\[
+\begin{cases}
+20.45 = a_{14}\,(3.07 - b_{14}) \\
+15.47 = a_{14}\,(2.22 - b_{14})
+\end{cases}
+\]
+\[
+\begin{cases}
+27.27 = a_{28}\,(3.07 - b_{28}) \\
+22.42 = a_{28}\,(2.22 - b_{28})
+\end{cases}
+\]
+
+Para el cemento de alta resistencia:
+\[
+\begin{cases}
+24.24 = a_{14}\,(2.31 - b_{14}) \\
+33.20 = a_{14}\,(2.71 - b_{14})
+\end{cases}
+\]
+\[
+\begin{cases}
+29.55 = a_{28}\,(2.31 - b_{28}) \\
+43.11 = a_{28}\,(2.71 - b_{28})
+\end{cases}
+\]
+
+
+\begin{table}[H]
+\centering
+\caption{Parámetros obtenidas por el método de Bolomey para cada tipo de cemento}
+\renewcommand{\arraystretch}{1.15}
+\small
+\begin{tabular}{lcc}
+\hline
+Parámetro & Cemento corriente & Cemento alta resistencia \\ \hline
+c/w - Mezcla 1 (Z1 / V1) & 3.07 & 2.31 \\
+c/w - Mezcla 2 (Z2 / V2) & 2.22 & 2.71 \\
+$a_{14}$ & 5.85 & 22.15 \\
+$b_{14}$ & -0.42 & 1.21 \\
+$a_{28}$ & 5.70 & 33.51 \\
+$b_{28}$ & -1.72 & 1.42 \\
+$c/w$ & 4.62 & 2.50 \\ 
+$c$ & 650.12 [kg/m$^3$] & 352.10 [kg/m$^3$] \\ \hline
+\end{tabular}
+\end{table}
+

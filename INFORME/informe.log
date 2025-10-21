@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.16)  21 OCT 2025 00:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.16)  21 OCT 2025 10:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/felip/OneDrive/Escritorio/202520/Tecnología del Hormigón/TALLER_3/INFORME/informe.tex"
-(c:/Users/felip/OneDrive/Escritorio/202520/Tecnología del Hormigón/TALLER_3/INFORME/informe.tex
+**"c:/Users/felip/OneDrive/Escritorio/202520/Tecnología del Hormigón/TALLER_3_TH/INFORME/informe.tex"
+(c:/Users/felip/OneDrive/Escritorio/202520/Tecnología del Hormigón/TALLER_3_TH/INFORME/informe.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
 (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -780,7 +780,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (informe.aux
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
- (intro.aux))
+ (intro.aux) (resul.aux))
 \openout1 = `informe.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
@@ -889,7 +889,7 @@ Package hyperref Info: Link coloring ON on input line 128.
 \@outlinefile=\write4
 \openout4 = `informe.out'.
 
-<LOGO_UNIVERSIDAD.jpg, id=10, 682.9515pt x 247.6452pt>
+<LOGO_UNIVERSIDAD.jpg, id=26, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 138.
@@ -910,29 +910,85 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.191 \include{intro}
                       [1
 
-] (informe.aux
+]
+\openout2 = `resul.aux'.
+
+ (resul.tex
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 15.
+ (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 15.
+ (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 15.
+ (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 15.
+ (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 15.
+ (C:\Users\felip\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
+
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 65.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+[2
+
+
+
+])
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 193.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+[3] (informe.aux
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
- (intro.aux))
+ (intro.aux) (resul.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: E62C6D918433D5AAD12CD53CDEFE43A7;106.
+(rerunfilecheck)             Checksum: C61A30F41E5E78006DD94717BF6F753B;801.
  ) 
 Here is how much of TeX's memory you used:
- 28817 strings out of 473899
- 533616 string characters out of 5726499
- 1931960 words of memory out of 5000000
- 51171 multiletter control sequences out of 15000+600000
- 580074 words of font info for 87 fonts, out of 8000000 for 9000
+ 29141 strings out of 473899
+ 539308 string characters out of 5726499
+ 1941960 words of memory out of 5000000
+ 51362 multiletter control sequences out of 15000+600000
+ 614605 words of font info for 186 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,87p,1223b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on informe.pdf (2 pages, 245400 bytes).
+ 84i,17n,87p,1226b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/felip/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on informe.pdf (4 pages, 301556 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 26656 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 94 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 62528 words of extra memory for PDF output out of 74296 (max. 10000000)
 
