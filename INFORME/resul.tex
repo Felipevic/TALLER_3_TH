@@ -184,7 +184,7 @@ Se tienen los siguientes datos de entrada:
 \begin{tabular}{@{}c@{}}Cono de\\ Asentamiento (mm)\end{tabular} &
 \begin{tabular}{@{}c@{}}Densidad\\ (kg/m\textsuperscript{3})\end{tabular} &
 \begin{tabular}{@{}c@{}}Altura de\\ Colocación (m)\end{tabular} &
-\begin{tabular}{@{}c@{}}Temperatura\\ (^\circ C)\end{tabular} &
+\begin{tabular}{@{}c@{}}Temperatura\\ ($^\circ$C)\end{tabular} &
 \begin{tabular}{@{}c@{}}Presión\\ Lateral (kPa)\end{tabular} \\
 \hline
 II & 148 & 2376 & 6.1 & 16.4 & 89 \\
@@ -235,7 +235,7 @@ Agua para columnas & kg/m$^3$ & 141 & 141\\ \hline
 \end{tabular}
 \end{table}
 
-\subsubsection{Resistencia a la compresión}
+\subsubsection*{Resistencia a la compresión}
 
 En primer lugar, se determinó la resistencia requerida a partir de la especificada utilizando la siguiente fórmula: $f_{cm} = f_c + t \cdot s$, donde $f_c$ es la resistencia especificada, $t$ es un factor de seguridad y $s$ es la desviación estándar del hormigón.
 
@@ -254,7 +254,7 @@ Resistencia mínima para desmolde & $f_{req}$ & 32.47 \\ \hline
 \end{tabular}
 \end{table}
 
-\subsubsection{Dosis mínima de cemento}
+\subsubsection*{Dosis mínima de cemento}
 
 En segundo lugar, se utilizó el método de Bolomey para determinar la dosis de cemento a utilizar para alcanzar la resistencia requerida. Se utilizó esta fórmula $R = a(\frac{c}{w} - b)$ para determinar los parámetros $a$, $b$, con los cuales se obtuvo la relación $c/w$ y finalmente de la dosis de cemento. Los sistemas de ecuaciones resueltos son los siguientes:
 
@@ -286,7 +286,6 @@ Para el cemento de alta resistencia:
 \end{cases}
 \]
 
-
 \begin{table}[H]
 \centering
 \caption{Parámetros obtenidas por el método de Bolomey para cada tipo de cemento}
@@ -305,4 +304,96 @@ $c/w$ & 4.62 & 2.50 \\
 $c$ & 650.12 [kg/m$^3$] & 352.10 [kg/m$^3$] \\ \hline
 \end{tabular}
 \end{table}
+
+\subsubsection*{Tiempo de desmolde}
+
+En esta sección, se utilizó el método de Venuat para determinar el tiempo mínimo de desmolde para ambos tipos de cemento. Los sistemas resueltos son los siguientes, utilizando la ecuación de Venuat:
+
+Cemento corriente:
+\[
+\begin{cases}
+29.51 = K_1 + K_2 \cdot \log_{10}(14) \\
+36.08 = K_1 + K_2 \cdot \log_{10}(28)
+\end{cases}
+\]
+
+Cemento de alta resistencia:
+\[
+\begin{cases}
+28.55 = K_1 + K_2 \cdot \log_{10}(14) \\
+36.08 = K_1 + K_2 \cdot \log_{10}(28)
+\end{cases}
+\]
+
+Posteriormente, se despejó el tiempo necesario para alcanzar la resistencia mínima requerida para el desmolde, utilizando la misma ecuación de Venuat, dando como resultado los siguientes parámetros:
+
+\begin{table}[H]
+\centering
+\caption{Constantes obtenidas mediante el método de Venuat}
+\renewcommand{\arraystretch}{1.15}
+\small
+\begin{tabular}{lcccc}
+\hline
+Tipo de cemento & $R_{14} [MPa]$ & $K_1$ & $K_2$ & $t_{desmolde}$ \\ \hline
+Cemento corriente & 29.51 & 4.48 & 21.84 & 19.14 dias \\
+Cemento alta resistencia & 28.55 & -0.13 & 25.02 & 20.09 dias\\ \hline
+\end{tabular}
+\end{table}
+
+\subsubsection*{Comparación de costos de proyecto}
+
+Obtenido el tiempo de desmolde para cada tipo de cemento y los costos asociados a las varibales, se determinó el siguiente cuadro comparativo de costos:
+
+\begin{table}[H]
+\centering
+\caption{Análisis de costos por tipo de cemento}
+\renewcommand{\arraystretch}{1.1}
+\small
+\begin{tabular}{lcccc}
+\hline
+Concepto & Unidad & Cemento corriente & Cemento alta resistencia \\ \hline
+Costo del cemento & \$/kg & 100 & 140 \\
+Costo de moldajes & \$/día & 400 & 400 \\
+Consumo de cemento & kg/m$^3$ & 650.12 & 352.10 \\
+Duración del moldaje & días & 19.14 & 20.09 \\
+Costo total por 1 m$^3$ & \$ & 72668 & 57329 \\ \hline
+\end{tabular}
+\end{table}
+
+A partir de los resultados obtenidos mediante los métodos de Bolomey y Venuat, se observa que el uso de cemento de alta resistencia inicial presenta una mejor relación entre consumo de material, resistencia alcanzada y costo total por metro cúbico de hormigón.  
+Aunque el costo unitario del cemento de alta resistencia es mayor, su menor dosificación requerida compensa la diferencia.  
+
+El tiempo estimado de desmolde es similar, con 19,14 (20) días para el cemento corriente y 20,09 (20) días para el cemento de alta resistencia, la cual es una diferencia que no afecta el proceso constructivo.  
+
+Al integrar ambos factores en el análisis económico, el costo total del elemento resulta menor para el cemento de alta resistencia (57.329 \$ por m$^3$) en comparación con el cemento corriente (72.668 \$ por m$^3$).  
+Por tanto, la alternativa que minimiza los costos del proyecto es el cemento de alta resistencia, ya que logra la resistencia requerida con menor material y menor costo total, manteniendo el desempeño estructural.
+
+\subsection*{Discusión}
+
+\subsubsection*{Pregunta 1} 
+La velocidad de colocación influye directamente en la distribución de la presión lateral del hormigón fresco. Cuando la colocación es rápida, el hormigón no alcanza a fraguar en las capas de abajo, generando una pseudo presión hidrostática sobre los moldajes. En cambio, una colocación lenta permite que las primeras capas se endurezcan, reduciendo los esfuerzos laterales. El bombeo continuo o el vertido en capas controladas pueden modificar esta distribución, siendo el vibrado interno un factor adicional que puede aumentar la presión lateral al reducir la viscosidad del material.
+
+\subsubsection*{Pregunta 2} 
+A mayor temperatura, se acelera el fraguado y la pérdida de trabajabilidad, reduciendo el tiempo durante el cual el hormigón ejerce presión máxima sobre los moldajes. En cambio, a bajas temperaturas el proceso de hidratación es más lento, aumentando el tiempo de presión hidrostática. Temperaturas extremas pueden alterar la microestructura del cemento: en climas cálidos aumenta la evaporación superficial, y en fríos, el riesgo de congelamiento y retraso del endurecimiento. Por ello, los factores climáticos deben ser considerados al definir tasas de colocación y tiempos de descimbre.
+
+\subsubsection*{Pregunta 3} 
+
+\subsubsection*{Pregunta 4} 
+
+\subsubsection*{Pregunta 5} 
+
+\subsubsection*{Pregunta 6} 
+El método de Bolomey relaciona la resistencia con la dosificación y la razón w/c. El método de madurez, en cambio, se basa en la evolución de temperatura del hormigón, permitiendo estimar la resistencia real en obra. Bolomey es útil para estimaciones iniciales o cuando no hay registros térmicos, mientras que el de madurez, es para monitoreo en tiempo real. El primero asume condiciones de curado estables, mientras que el segundo las incorpora explícitamente. En proyectos donde se busca precisión operativa, el método de madurez es mejor. Para control de planta, Bolomey es más práctico.
+
+\subsubsection*{Pregunta 7} 
+Las constantes \( a \) y \( b \) representan la sensibilidad del hormigón frente a variaciones en la dosificación y la calidad de los materiales. Cambios en el tipo de cemento o en los agregados modifican la relación w/c efectiva y, así, la pendiente y el intercepto de la ecuación de Bolomey. Ante un cambio de materiales, se deben realizar ensayos de resistencia a diferentes razones c/w y ajustar los parámetros \( a \) y \( b \). Esto permite recalibrar el modelo y mantener la exactitud en la predicción de resistencias.
+
+\subsubsection*{Pregunta 8} 
+Según la relación de Bolomey, la resistencia a compresión es directamente proporcional a \((c/w - b)\). Si se reduce la cantidad de cemento en un 10\% manteniendo constante el agua, la razón \( c/w \) también disminuye en un 10\%, reduciendo proporcionalmente la resistencia. Esta variación implica una disminución en la resistencia inicial, dependiendo del valor de \( b \) y del tipo de cemento.
+
+\subsubsection*{Pregunta 9} 
+
+\subsubsection*{Pregunta 10} 
+
+
 
