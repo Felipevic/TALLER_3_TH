@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761058180.58357 "/Users/lukaswolff/Desktop/25_20/TECNOLOGIAS_DEL_HORMIGON/TAREAS/TALLER_3_TH/INFORME/informe.tex" "informe.pdf" "informe" 1761058181.47389 0
+["pdflatex"] 1761060799.10359 "/Users/lukaswolff/Desktop/25_20/TECNOLOGIAS_DEL_HORMIGON/TAREAS/TALLER_3_TH/INFORME/informe.tex" "informe.pdf" "informe" 1761060800.14101 2
   "/Users/lukaswolff/Desktop/25_20/TECNOLOGIAS_DEL_HORMIGON/TAREAS/TALLER_3_TH/INFORME/informe.tex" 1761054475.36584 7222 5e43e65ef3bb4ce7efe4971e11ace5b7 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -199,13 +199,15 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1710685568 8221436 9feefa88f893c4604437a3bcd513880c ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "LOGO_UNIVERSIDAD.jpg" 1761054475.36098 209820 0b87a0bacbcaefabd8c20ec03a39f2f2 ""
-  "informe.aux" 1761058181.40082 463 3e20273cba4482dacc192e0da4f66361 "pdflatex"
-  "informe.out" 1761058181.4023 944 55a51a8c6513a13b7008ad6907272191 "pdflatex"
+  "datos_entrada.png" 1761060643.93716 186034 9578f5bf81e1fbf2ae348f312f856d77 ""
+  "informe.aux" 1761060800.06659 463 ace32d50730af8fe0bf38652822f0701 "pdflatex"
+  "informe.out" 1761060800.06808 607 13984817427af25a15da2732f4d13f96 "pdflatex"
   "informe.tex" 1761054475.36584 7222 5e43e65ef3bb4ce7efe4971e11ace5b7 ""
-  "intro.aux" 1761058181.34387 930 82e1076671691c4b4c33ff45e0c96b9b "pdflatex"
+  "intro.aux" 1761060799.85798 930 82e1076671691c4b4c33ff45e0c96b9b "pdflatex"
   "intro.tex" 1761054475.36601 2508 7e848b3f1a8b5d278dc9d16531d881d2 ""
-  "resul.aux" 1761058181.40057 1962 9875332ea5305e283b273fb1d98919e5 "pdflatex"
-  "resul.tex" 1761058180.40904 8491 62931071436efb92b0672e9377cd06c3 ""
+  "resul.aux" 1761060800.06633 2022 d8ae21caff867aa2426224bf31fa764d "pdflatex"
+  "resul.tex" 1761060792.83103 11763 fce3483c8a496a26c23d97605d97b4ba ""
+  "resultado.png" 1761060770.91037 167362 afd54f104f4120e446fe6f7f3371c47f ""
   (generated)
   "informe.aux"
   "informe.log"
@@ -214,3 +216,5 @@
   "intro.aux"
   "resul.aux"
   (rewritten before read)
+  "intro.aux"
+  "resul.aux"

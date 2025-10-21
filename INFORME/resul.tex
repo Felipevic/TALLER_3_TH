@@ -1,6 +1,6 @@
 \section{Desarrollo}
 
-\subsection{Parte 1: Madurez}
+\subsection*{Parte 1: Madurez}
 
 En primer lugar se determina la madurez del hormigón según el método de Plowman, para luego determinar el tiempo necesario para alcanzar la resistencia requerida con los metodos de Nurse-Saul como la de Freieslaben, Hansen y Pedersen.
 
@@ -14,7 +14,7 @@ Considerando una temperatura de terreno de 23 °C ($T_r$), asi como $T_D$ tiene 
 
 A partir de los datos entregados, se obtiene la siguiente tabla:
 
-\begin{table}[htbp]
+\begin{table}[H]
 \centering
 \renewcommand{\arraystretch}{1.15}
 \begin{tabular}{r r r r r r r r}
@@ -125,7 +125,90 @@ De esta forma, se obtiene la siguiente tabla:
 
 Luego, interpolando la madurez obtenida, se obtiene un tiempo de 17.037 dias en obra y 15.674 dias en laboratorio para alcanzar la resitencia requerida de 21.35 MPa.
 
-\subsection{Parte 3: Bolomey y Venuat}
+\subsection*{Freiesleben Hansen y Pedersen}
+
+El metodo establece que el tiempo equivalente se puede calcular como:
+
+\begin{equation}
+    t_{eq} = \sum e^{-Q \cdot (\frac{1}{T_a} - \frac{1}{T_s})} \Delta t_i
+\end{equation}
+
+Donde Q corresponde a la energia de activacion, para cemento tipo II Q = . De esta forma, se obtiene la siguiente tabla:
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{r r r r r r}
+\hline
+\multicolumn{1}{c}{Edad} & \multicolumn{1}{c}{Temperatura} & \multicolumn{1}{c}{Madurez} & \multicolumn{1}{c}{K prom} & \multicolumn{1}{c}{teq obra} & \multicolumn{1}{c}{teq lab} \\
+\hline
+0 & 29 & 0 & 273.15 & 0 & 0 \\
+0.25 & 39 & 7 & 307.15 & 0.457650536 & 0.40864708 \\
+0.5 & 49 & 14 & 317.15 & 1.222276193 & 1.091399566 \\
+0.75 & 54 & 21 & 324.65 & 2.322859691 & 2.074136823 \\
+1 & 59 & 28 & 329.65 & 3.713048795 & 3.315469833 \\
+1.5 & 64 & 42 & 334.65 & 7.200620997 & 6.429606238 \\
+2 & 59 & 56 & 334.65 & 10.6881932 & 9.543742643 \\
+2.5 & 48 & 70 & 326.65 & 13.10702707 & 11.7035771 \\
+3 & 44 & 84 & 319.15 & 14.79507793 & 13.21087797 \\
+3.5 & 39 & 98 & 314.65 & 16.14428463 & 14.41561682 \\
+4 & 34 & 112 & 309.65 & 17.1881452 & 15.34770482 \\
+4.5 & 29 & 126 & 304.65 & 17.98899055 & 16.06279874 \\
+5 & 26 & 140 & 300.65 & 18.63274066 & 16.63761856 \\
+5.5 & 26 & 154 & 299.15 & 19.22498612 & 17.16644866 \\
+6 & 23 & 168 & 297.65 & 19.76938993 & 17.65255981 \\
+7 & 23 & 196 & 296.15 & 20.76938993 & 18.54548366 \\
+8 & 23 & 224 & 296.15 & 21.76938993 & 19.43840751 \\
+9 & 23 & 252 & 296.15 & 22.76938993 & 20.33133136 \\
+10 & 23 & 280 & 296.15 & 23.76938993 & 21.22425522 \\
+11 & 23 & 308 & 296.15 & 24.76938993 & 22.11717907 \\
+14 & 23 & 392 & 296.15 & 27.76938993 & 24.79595062 \\
+21 & 23 & 588 & 296.15 & 34.76938993 & 31.04641759 \\
+28 & 23 & 784 & 296.15 & 41.76938993 & 37.29688455 \\
+\hline
+\end{tabular}
+\end{table}
+
+Luego, interpolando la madurez obtenida, se obtiene un tiempo de 17.037 dias en obra y 15.674 dias en laboratorio para alcanzar la resitencia requerida de 21.35 MPa.
+
+\subsection*{Parte 2: Presion de Moldajes}
+
+Se tienen los siguientes datos de entrada:
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{c c c c c c}
+\hline
+\begin{tabular}{@{}c@{}}Tipo\\ de Cemento\end{tabular} &
+\begin{tabular}{@{}c@{}}Cono de\\ Asentamiento (mm)\end{tabular} &
+\begin{tabular}{@{}c@{}}Densidad\\ (kg/m\textsuperscript{3})\end{tabular} &
+\begin{tabular}{@{}c@{}}Altura de\\ Colocación (m)\end{tabular} &
+\begin{tabular}{@{}c@{}}Temperatura\\ (^\circ C)\end{tabular} &
+\begin{tabular}{@{}c@{}}Presión\\ Lateral (kPa)\end{tabular} \\
+\hline
+II & 148 & 2376 & 6.1 & 16.4 & 89 \\
+\hline
+\end{tabular}
+\end{table}
+
+Los cuales fueron ingresados en la calculadora de presión de moldajes de la página \href{https://apps.peri.com/SLR/index.php?lang=en&norm=aci}{PERI}. Los datos fueron ingresados como se muestra en la siguiente imagen:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{datos_entrada.png}
+    \caption{Datos ingresados en la calculadora de PERI}
+\end{figure}
+
+Lo cual da el siguiente resultado:
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{resultado.png}
+    \caption{Resultado de la calculadora de PERI}
+\end{figure}
+
+\subsection*{Parte 3: Bolomey y Venuat}
 
 En esta parte se requirió determinar el tiempo mínimo de desmolde de una columna para optimizar el presupuesto de la obra. Se compararon los tiempos de desmimbre utilizando un hormigón tradicional con uno de alta resistencia. 
 Para el desarrollo de esta sección, se utilizaron los métodos de Bolomey y Venuat, los cuales permiten estimar la resistencia del hormigón en función de su dosificación y del tiempo de curado.

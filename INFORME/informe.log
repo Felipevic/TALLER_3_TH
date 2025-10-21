@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.17)  21 OCT 2025 11:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.17)  21 OCT 2025 12:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -772,10 +772,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 126.
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 128.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) (./informe.aux
-LaTeX Info: Redefining \. on input line 14.
-LaTeX Info: Redefining \% on input line 14.
- (./intro.aux) (./resul.aux))
+) (./informe.aux)
 \openout1 = `informe.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
@@ -880,16 +877,15 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Couldn't patch \ttl@straight@ii
 Couldn't patch \ttl@straight@ii
 Package hyperref Info: Link coloring ON on input line 128.
-(./informe.out) (./informe.out)
 \@outlinefile=\write4
 \openout4 = `informe.out'.
 
-<LOGO_UNIVERSIDAD.jpg, id=31, 682.9515pt x 247.6452pt>
+<LOGO_UNIVERSIDAD.jpg, id=7, 682.9515pt x 247.6452pt>
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 138.
 (pdftex.def)             Requested size: 284.52756pt x 103.17137pt.
- [1
+[1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc} <./LOGO_UNIVERSIDAD.jpg>]
 \openout2 = `intro.aux'.
@@ -953,27 +949,76 @@ File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 125.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
  [3]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 140.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 140.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 140.
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 154.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 171.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
  [4]
+./resul.tex:187: Missing $ inserted.
+<inserted text> 
+                $
+l.187 \begin{tabular}{@{}c@{}}Temperatura\\ (^
+                                              \circ C)\end{tabular} &
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./resul.tex:187: Missing $ inserted.
+<inserted text> 
+                $
+l.187 ...@{}}Temperatura\\ (^\circ C)\end{tabular}
+                                                   &
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<datos_entrada.png, id=53, 317.185pt x 771.88374pt>
+File: datos_entrada.png Graphic file (type png)
+<use datos_entrada.png>
+Package pdftex.def Info: datos_entrada.png  used on input line 199.
+(pdftex.def)             Requested size: 221.78923pt x 539.74959pt.
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 225.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 202.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [5])
+[5]
+<resultado.png, id=62, 611.28375pt x 628.3475pt>
+File: resultado.png Graphic file (type png)
+<use resultado.png>
+Package pdftex.def Info: resultado.png  used on input line 207.
+(pdftex.def)             Requested size: 221.78923pt x 227.97867pt.
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 215.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [6 <./datos_entrada.png>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 223.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 223.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 223.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 238.
+
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 256.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+[7 <./resultado.png>])
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 193.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [6] (./informe.aux
+ [8]
+
+LaTeX Warning: Hook 'shipout/lastpage' executed on wrong page (1 not 9).
+               Rerun to correct this.
+
+(./informe.aux
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
  (./intro.aux) (./resul.aux))
@@ -981,22 +1026,29 @@ LaTeX Info: Redefining \% on input line 14.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: 55A51A8C6513A13B7008AD6907272191;944.
+
+
+Package rerunfilecheck Warning: File `informe.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `informe.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  13984817427AF25A15DA2732F4D13F96;607.
  ) 
 Here is how much of TeX's memory you used:
- 29059 strings out of 474116
- 532745 string characters out of 5743682
- 1949187 words of memory out of 5000000
- 50738 multiletter control sequences out of 15000+600000
- 618845 words of font info for 200 fonts, out of 8000000 for 9000
+ 29072 strings out of 474116
+ 533002 string characters out of 5743682
+ 1948187 words of memory out of 5000000
+ 50744 multiletter control sequences out of 15000+600000
+ 622549 words of font info for 208 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,87p,1220b,546s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,18n,87p,1220b,546s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on informe.pdf (7 pages, 303782 bytes).
+Output written on informe.pdf (9 pages, 571496 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 68674 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 132 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
+ 30 named destinations out of 1000 (max. 500000)
+ 70684 words of extra memory for PDF output out of 74296 (max. 10000000)
 
