@@ -204,11 +204,31 @@ Los cuales fueron ingresados en la calculadora de presión de moldajes de la pá
 
 Lo cual da el siguiente resultado:
 
-\begin{figure}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.5\linewidth]{resultado.png}
     \caption{Resultado de la calculadora de PERI}
 \end{figure}
+
+Donde no se genera un limite del hormigonado, por lo tanto, se puede realizar la solicitud de 10 $m/h$ sin problemas.
+
+Ahora bien, si la presion maxima es un 80\% de la presion indicada, es decir, 71.2 kPa, para mantener el rendimiento de 10 $m/h$, se propone disminuir la densidad del hormigon a 2150 kg/m$^3$. Ingresando este nuevo valor en la calculadora, se obtiene el siguiente resultado:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{max_rate.png}
+    \caption{Resultado de la calculadora de PERI con densidad reducida}
+\end{figure}
+
+Donde el grafico de distribucion de presion es:
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{presiones_2.png}
+    \caption{Distribucion de presion con densidad reducida}
+\end{figure}
+
+Para lograr tal objetivo, se puede generar un hormigon con agregados livianos.
 
 \subsection*{Parte 3: Bolomey y Venuat}
 
@@ -417,8 +437,23 @@ Según la relación de Bolomey, la resistencia a compresión es directamente pro
 
 \subsubsection*{Pregunta 9} 
 
+Aplicando el metodo de Venuat, se obtiene el siguiente sistema de ecuaciones:
 
+\begin{equation}
+    17.21 = K_1 + K_2 \cdot \log_{10}(14)
+\end{equation}
 
+\begin{equation}
+    30.09 = K_1 + K_2 \cdot \log_{10}(28)
+\end{equation}
+
+Resolviendo el sistema, se obtiene que \( K_1 = -31.828 \) y \( K_2 = 42.78 \). Luego, para determinar el tiempo necesario para alcanzar la resitencia requerida, se utiliza la misma ecuacion de Venuat:
+
+\begin{equation}
+    21.35 = -31.828 + 42.78 \cdot \log_{10}(t)
+\end{equation}
+
+De lo que se obtiene un tiempo de 17.502 dias.
 \subsubsection*{Pregunta 10} 
 
 

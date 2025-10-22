@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761138836.75582 "/Users/lukaswolff/Desktop/25_20/TECNOLOGIAS_DEL_HORMIGON/TAREAS/TALLER_3_TH/INFORME/informe.tex" "informe.pdf" "informe" 1761138837.92417 0
+["pdflatex"] 1761148120.63298 "/Users/lukaswolff/Desktop/25_20/TECNOLOGIAS_DEL_HORMIGON/TAREAS/TALLER_3_TH/INFORME/informe.tex" "informe.pdf" "informe" 1761148121.80668 0
   "/Users/lukaswolff/Desktop/25_20/TECNOLOGIAS_DEL_HORMIGON/TAREAS/TALLER_3_TH/INFORME/informe.tex" 1761054475.36584 7222 5e43e65ef3bb4ce7efe4971e11ace5b7 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -200,13 +200,15 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "LOGO_UNIVERSIDAD.jpg" 1761054475.36098 209820 0b87a0bacbcaefabd8c20ec03a39f2f2 ""
   "datos_entrada.png" 1761060643.93716 186034 9578f5bf81e1fbf2ae348f312f856d77 ""
-  "informe.aux" 1761138837.84054 464 693369664aedf11a87736028a96ab45f "pdflatex"
-  "informe.out" 1761138837.84209 199 85cf50338c4df52fb148f0edde249f6b "pdflatex"
+  "informe.aux" 1761148121.72963 464 82f04ea62c3b973e023cd42a913fed6c "pdflatex"
+  "informe.out" 1761148121.73123 199 85cf50338c4df52fb148f0edde249f6b "pdflatex"
   "informe.tex" 1761054475.36584 7222 5e43e65ef3bb4ce7efe4971e11ace5b7 ""
-  "intro.aux" 1761138837.59895 930 82e1076671691c4b4c33ff45e0c96b9b "pdflatex"
+  "intro.aux" 1761148121.40503 930 82e1076671691c4b4c33ff45e0c96b9b "pdflatex"
   "intro.tex" 1761054475.36601 2508 7e848b3f1a8b5d278dc9d16531d881d2 ""
-  "resul.aux" 1761138837.84026 2062 59b5b8eca9c04dc0ab65873d75a8b6c4 "pdflatex"
-  "resul.tex" 1761138836.51839 21875 74c9e5dbb3d400ec33d845a8d4e8786f ""
+  "max_rate.png" 1761148016.24358 44189 0557044a03a62dcd43b86d19520c28ff ""
+  "presiones_2.png" 1761148094.77261 124641 db47772e6f7a47bb5f59f6a2885bd866 ""
+  "resul.aux" 1761148121.72933 2407 1d8540575b11740a666552a783e2cd70 "pdflatex"
+  "resul.tex" 1761148120.45765 23300 b5d7723220ce1f0cc15b39fa4a5e22a9 ""
   "resultado.png" 1761060770.91037 167362 afd54f104f4120e446fe6f7f3371c47f ""
   (generated)
   "informe.aux"
