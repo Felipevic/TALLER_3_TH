@@ -80,7 +80,7 @@ De esta forma, $K_1 = -74.70$ y $K_2 = 24.51$. Por lo tanto, la madurez requerid
 
 \noindent Así, la madurez necesaria es de $M = 345.26\ °C\cdot día$.
 
-\subsubsection*{Método de Nurse–Saul}
+\subsubsection*{Método de Nurse-Saul}
 
 El método establece que el tiempo equivalente puede calcularse mediante la siguiente expresión:
 
@@ -93,7 +93,7 @@ De esta forma, se obtiene la siguiente tabla:
 \begin{table}[H]
 \centering
 \renewcommand{\arraystretch}{1.15}
-\caption{Cálculo del tiempo equivalente según el método de Nurse–Saul}
+\caption{Cálculo del tiempo equivalente según el método de Nurse-Saul}
 \begin{tabular}{r r r r r}
 \hline
 \multicolumn{1}{c}{Edad [días]} & \multicolumn{1}{c}{Temperatura [°C]} & \multicolumn{1}{c}{$t_{eq,i}$ obra [días]} & \multicolumn{1}{c}{$t_{eq,i}$ lab [días]} & \multicolumn{1}{c}{Madurez [°C·día]} \\
@@ -182,7 +182,7 @@ Fuente: Elaboración propia.
 
 Al interpolar la madurez obtenida, se obtiene un tiempo de 26.10 días en obra y 23.31 días en laboratorio para alcanzar la resistencia requerida de 21.35 MPa.
 
-Las diferencias entre ambos métodos radican en que el modelo de Nurse–Saul es más simple y lineal, ya que no considera los efectos de la reacción química. En cambio, el modelo de Freiesleben Hansen y Pedersen incorpora la energía de activación y la variación de temperatura en una formulación exponencial, lo que lo hace más preciso para predecir la resistencia del hormigón en función del tiempo y la temperatura. 
+Las diferencias entre ambos métodos radican en que el modelo de Nurse-Saul es más simple y lineal, ya que no considera los efectos de la reacción química. En cambio, el modelo de Freiesleben Hansen y Pedersen incorpora la energía de activación y la variación de temperatura en una formulación exponencial, lo que lo hace más preciso para predecir la resistencia del hormigón en función del tiempo y la temperatura. 
 
 Cabe destacar que la energía de activación en este último método cumple un rol fundamental: a mayores valores de $Q$, el tiempo equivalente aumenta, lo que implica una reacción más lenta del hormigón.
 
@@ -269,7 +269,7 @@ A continuación, se presentan los datos experimentales, los cálculos efectuados
 \begin{table}[H]
 \centering
 \renewcommand{\arraystretch}{1.15}
-\caption{Datos experimentales – Grupo 5}
+\caption{Datos experimentales - Grupo 5}
 \small
 \begin{tabular}{lccc}
 \hline
@@ -362,8 +362,8 @@ Para el cemento de alta resistencia:
 \begin{tabular}{lcc}
 \hline
 \textbf{Parámetro} & \textbf{Cem. corriente} & \textbf{Cem. alta resistencia} \\ \hline
-$c/w$ – Mezcla 1 (Z1 / V1) & 3.07 & 2.31 \\
-$c/w$ – Mezcla 2 (Z2 / V2) & 2.22 & 2.71 \\
+$c/w$ - Mezcla 1 (Z1 / V1) & 3.07 & 2.31 \\
+$c/w$ - Mezcla 2 (Z2 / V2) & 2.22 & 2.71 \\
 $a_{14}$ & 5.85 & 22.15 \\
 $b_{14}$ & -0.42 & 1.21 \\
 $a_{28}$ & 5.70 & 33.51 \\
@@ -504,7 +504,7 @@ En consecuencia, el método de madurez tiende a ser más preciso en elementos de
 El tipo de cemento afecta significativamente la estimación de madurez, especialmente en el método de Freiesleben Hansen y Pedersen, dado que la energía de activación ($Q$) varía entre los distintos tipos de cemento.  
 Cementos con mayor contenido de clínker o con aditivos especiales presentan diferentes tasas de reacción, lo que modifica la velocidad de ganancia de resistencia.  
 
-En el método de Nurse–Saul, el tipo de cemento influye de manera indirecta a través de la temperatura alcanzada durante la hidratación, pero no interviene explícitamente en la ecuación.
+En el método de Nurse-Saul, el tipo de cemento influye de manera indirecta a través de la temperatura alcanzada durante la hidratación, pero no interviene explícitamente en la ecuación.
 
 Por otro lado, si la presión ejercida por el hormigón se calcula únicamente mediante la estimación hidrostática (columna de hormigón), el tipo de cemento tiene poca incidencia, ya que no se esperan variaciones significativas en la densidad del material.  
 Sin embargo, si se consideran factores como la velocidad de colocación, el fraguado y la pérdida de trabajabilidad, el tipo de cemento puede afectar indirectamente la presión ejercida: cementos de fraguado rápido tienden a reducir la presión máxima al acelerar el endurecimiento del hormigón.
@@ -563,6 +563,14 @@ Luego, para determinar el tiempo necesario para alcanzar la resistencia requerid
 Despejando, se obtiene un tiempo de 17.50 días para alcanzar la resistencia de \(21.35~\mathrm{MPa}\).
 
 
+Ahora bien, al comparar con los métodos analizados en la Pregunta 1, se observa que el método de Venuat presenta una gran similitud con el método de Nurse-Saul, dado que ambos se basan en principios análogos y no consideran variables termodinámicas como la energía de activación.  
+
+Sin embargo, puede concluirse que tanto el método de Venuat como el de Nurse-Saul son menos conservadores, ya que los tiempos de madurez calculados resultan menores en comparación con modelos que incorporan efectos térmicos más complejos, como el de Freiesleben Hansen y Pedersen.
+
+En este contexto, se selecciona la metodología de Venuat como la opción más adecuada, debido a que, además de ser menos conservadora, se fundamenta en un modelo exponencial, lo que le otorga una mayor precisión frente al modelo lineal propuesto por Nurse-Saul.
+
+
+
 \subsubsection*{Pregunta 10} 
 
 \begin{table}[H]
@@ -615,3 +623,16 @@ Fuente: Elaboración propia.
 
 En consecuencia, las variaciones en los valores de resistencia afectan de forma directa los parámetros $K_1$ y $K_2$ del modelo de Venuat, alterando los tiempos estimados de desmolde.  
 Esto resalta la importancia de realizar ensayos de control y verificación de resistencia antes del retiro de los moldajes, a fin de garantizar tanto la seguridad estructural como la eficiencia económica del proceso constructivo.
+
+\newpage
+\section{Conclusión General}
+
+El desarrollo de este informe permitió analizar y aplicar diversos métodos empíricos y analíticos asociados al control de la resistencia y la presión ejercida por el hormigón fresco durante las etapas iniciales de construcción.  
+
+En primer lugar, los métodos de madurez (Plowman, Nurse-Saul y Freiesleben Hansen-Pedersen) demostraron ser herramientas eficaces para estimar la resistencia en obra, destacando la importancia de la temperatura y el tiempo de curado como variables determinantes. El método de Freiesleben Hansen y Pedersen, al incorporar la energía de activación, entregó resultados más precisos, aunque de carácter más conservador, mientras que los de Nurse-Saul y Venuat mostraron comportamientos similares, siendo más ágiles y menos restrictivos para la programación de obra.
+
+En segundo lugar, el análisis de presión de moldajes evidenció la influencia directa de la velocidad de colocación, la temperatura y la densidad del hormigón en los esfuerzos laterales. Se confirmó que una colocación rápida o el uso de mezclas con fraguado lento puede aumentar las presiones, mientras que la utilización de hormigones livianos o con aditivos acelerantes permite reducirlas y mejorar la seguridad del proceso constructivo.
+
+Por otra parte, la aplicación de los métodos de Bolomey y Venuat posibilitó relacionar la dosificación y la evolución resistente, estableciendo el tiempo óptimo de desmolde. Los resultados demostraron que el uso de cementos de alta resistencia permite reducir el consumo de material y los costos totales por metro cúbico, manteniendo la resistencia requerida y tiempos de desmolde similares al hormigón convencional.
+
+Finalmente, la integración de los métodos estudiados refleja la necesidad de combinar modelos empíricos y experimentales para lograr un control más completo del comportamiento del hormigón en obra. La metodología de Venuat se identificó como la más equilibrada en precisión, simplicidad y aplicabilidad, constituyendo una herramienta confiable para la planificación estructural y económica del proyecto.

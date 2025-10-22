@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.17)  22 OCT 2025 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.17)  22 OCT 2025 17:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1050,14 +1050,19 @@ Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 533.
  [13]
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
-Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 596.
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 598.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [14])
+ [14]
+File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
+<use LOGO_UNIVERSIDAD.jpg>
+Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 627.
+(pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
+ [15])
 File: LOGO_UNIVERSIDAD.jpg Graphic file (type jpg)
 <use LOGO_UNIVERSIDAD.jpg>
 Package pdftex.def Info: LOGO_UNIVERSIDAD.jpg  used on input line 193.
 (pdftex.def)             Requested size: 110.8946pt x 40.20973pt.
- [15] [16] (./informe.aux
+ [16] [17] (./informe.aux
 LaTeX Info: Redefining \. on input line 14.
 LaTeX Info: Redefining \% on input line 14.
  (./intro.aux) (./resul.aux))
@@ -1076,21 +1081,21 @@ Package rerunfilecheck Warning: File `informe.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `informe.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  85CF50338C4DF52FB148F0EDDE249F6B;199.
+(rerunfilecheck)             After:  A1EE98329288D62259E9326AF37337C0;338.
  ) 
 Here is how much of TeX's memory you used:
- 29187 strings out of 474116
- 534212 string characters out of 5743682
+ 29195 strings out of 474116
+ 534276 string characters out of 5743682
  1949187 words of memory out of 5000000
  50760 multiletter control sequences out of 15000+600000
- 630008 words of font info for 265 fonts, out of 8000000 for 9000
+ 630268 words of font info for 269 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,87p,1220b,546s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on informe.pdf (17 pages, 691065 bytes).
+Output written on informe.pdf (18 pages, 694013 bytes).
 PDF statistics:
- 194 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
  74790 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761163349.80051 "/Users/lukaswolff/Desktop/25_20/TECNOLOGIAS_DEL_HORMIGON/TAREAS/TALLER_3_TH/INFORME/informe.tex" "informe.pdf" "informe" 1761163350.98677 2
+["pdflatex"] 1761163840.79276 "/Users/lukaswolff/Desktop/25_20/TECNOLOGIAS_DEL_HORMIGON/TAREAS/TALLER_3_TH/INFORME/informe.tex" "informe.pdf" "informe" 1761163842.00624 2
   "/Users/lukaswolff/Desktop/25_20/TECNOLOGIAS_DEL_HORMIGON/TAREAS/TALLER_3_TH/INFORME/informe.tex" 1761054475.36584 7222 5e43e65ef3bb4ce7efe4971e11ace5b7 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -202,15 +202,15 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "LOGO_UNIVERSIDAD.jpg" 1761054475.36098 209820 0b87a0bacbcaefabd8c20ec03a39f2f2 ""
   "datos_entrada.png" 1761060643.93716 186034 9578f5bf81e1fbf2ae348f312f856d77 ""
-  "informe.aux" 1761163350.90594 464 e0b866e1d66ab17bdd3e4385c2bb4788 "pdflatex"
-  "informe.out" 1761163350.90772 199 85cf50338c4df52fb148f0edde249f6b "pdflatex"
+  "informe.aux" 1761163841.92766 464 69f8bf893c51e28804f471c655d34743 "pdflatex"
+  "informe.out" 1761163841.92933 338 a1ee98329288d62259e9326af37337c0 "pdflatex"
   "informe.tex" 1761054475.36584 7222 5e43e65ef3bb4ce7efe4971e11ace5b7 ""
-  "intro.aux" 1761163350.56086 930 82e1076671691c4b4c33ff45e0c96b9b "pdflatex"
-  "intro.tex" 1761054475.36601 2508 7e848b3f1a8b5d278dc9d16531d881d2 ""
+  "intro.aux" 1761163841.58746 930 82e1076671691c4b4c33ff45e0c96b9b "pdflatex"
+  "intro.tex" 1761163829.32378 2520 f004be81228510052a893f5f6e2de54c ""
   "max_rate.png" 1761161676.34783 44189 0557044a03a62dcd43b86d19520c28ff ""
   "presiones_2.png" 1761161666.30723 124641 db47772e6f7a47bb5f59f6a2885bd866 ""
-  "resul.aux" 1761163350.90492 3507 e72fd59126f283623c384e5e31da3f50 "pdflatex"
-  "resul.tex" 1761163344.25083 29216 050007ecf12141048aefdd1c57b2ef35 ""
+  "resul.aux" 1761163841.92689 3620 4fa3946a53812b33cda889371bcb7dc1 "pdflatex"
+  "resul.tex" 1761163735.65208 32190 bfc124fe90611d37cb50a7a62a8c47e6 ""
   "resultado.png" 1761060770.91037 167362 afd54f104f4120e446fe6f7f3371c47f ""
   (generated)
   "informe.aux"
