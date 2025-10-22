@@ -133,7 +133,7 @@ El metodo establece que el tiempo equivalente se puede calcular como:
     t_{eq} = \sum e^{-Q \cdot (\frac{1}{T_a} - \frac{1}{T_s})} \Delta t_i
 \end{equation}
 
-Donde Q corresponde a la energia de activacion, para cemento tipo II Q = . De esta forma, se obtiene la siguiente tabla:
+Donde Q corresponde a la energia de activacion, para cemento tipo I Q = 5000. Por simplicidad, se considerara que para cemento tipo II Q no varia.. De esta forma, se obtiene la siguiente tabla:
 
 \begin{table}[H]
 \centering
@@ -169,7 +169,9 @@ Donde Q corresponde a la energia de activacion, para cemento tipo II Q = . De es
 \end{tabular}
 \end{table}
 
-Luego, interpolando la madurez obtenida, se obtiene un tiempo de 17.037 dias en obra y 15.674 dias en laboratorio para alcanzar la resitencia requerida de 21.35 MPa.
+Luego, interpolando la madurez obtenida, se obtiene un tiempo de 26.100 dias en obra y 23.305 dias en laboratorio para alcanzar la resitencia requerida de 21.35 MPa.
+
+Las razones en la diferencia de cada metodo radica en que el modelo Nurse-Saul es un modelo mas simple y lineal, que no considera los efectos de la reaccion. En cambio, el modelo de Freiesleben Hansen y Pedersen considera la energia de activacion y la variacion de la temperatura, en un modelo exponencial, lo que lo hace mas preciso para predecir la resistencia del hormigon en funcion del tiempo y la temperatura. Ahora bien, la energia de activacion en este ultimo metodo juega un roll fundamental, donde se observa que a valores mayores, el tiempo equivalente aumenta, lo cual se traduce en que la reaccion ocurre mas lento.
 
 \subsection*{Parte 2: Presion de Moldajes}
 
@@ -378,7 +380,23 @@ A mayor temperatura, se acelera el fraguado y la pérdida de trabajabilidad, red
 
 \subsubsection*{Pregunta 3} 
 
+Un calculo conservador en la presion de los moldajes es calcular la columna de hormigon, es decir:
+
+\begin{equation}
+    p = \gamma \cdot g \cdot h
+\end{equation}
+
+Donde h corresponde a la altura de colocacion. Por lo tanto, se puede decir que la presion tiene una relacion directamente proporcional a la altura de colocacion. Ahora bien, en la practica, y como se vio reflejado en el desarrollo del taller, la presion maxima real es manor a la columna, por efectos del praguado mismo que ocurre en el hormigon, asi como la interaccion interna de la pasta de cemento.
+
+De esta forma, este factor juega un roll fundamental al hormigonar elementos de gran altura, con dificail acceso, lo que dificulta la labor de colocacion de puntales, asi como la velocidad de colocacion del hormigon, lo que puede generar presiones mayores a las esperadas. Asi mismo, otra aplicacion en que la consideracion de tal factor juega un roll critico es en las construcciones con moldajes deslizantes, donde la velocidad de ascenso del molde debe ser controlada para evitar presiones excesivas.
+
 \subsubsection*{Pregunta 4} 
+
+Claramente, las principales ventajes del metodo de madurez es que permite estimar la resitencia del hormigon en obra a partir de muestras de laboratorio, lo que permite un control riguroso sin afectar directamente el proceso cosntructivo. Ahora bien, tiene limitaciones frente a elementos como hormigones masivos, donde las variaciones de temperatura internas pueden ser significativas, lo que puede llevar a errores en la estimacion de la resistencia. Ademas, requiere de un monitoreo continuo de la temperatura, lo que puede ser logísticamente desafiante en obra, ya que se dben instalar sensores en lugares clave, lo que requiere mano de obra especializada y costos adicionales.
+
+Otros factores como la geometria juega un roll importante, ya que elementos delgados tienden a disipar mejor la temperatura que elementos con formas cuadradas como una fundacion aislada. Asi mismo, las condiciones de curado y condiciones climaticas externas afectan la ganancia de resistancia, ya que puede promover o inhibir la reaccion de hidratacion del cemento.
+
+De esta forma, se espera que el metodo de madurez tienda a ser mas preciso en elementos delgados y convencionales, como losas vigas o muros, mientras que en elementos masivos o con condiciones de curado no controladas, puede presentar limitaciones significativas.
 
 \subsubsection*{Pregunta 5} 
 
